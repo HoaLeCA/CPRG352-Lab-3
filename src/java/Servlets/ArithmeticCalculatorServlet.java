@@ -72,7 +72,7 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
              getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request, response);
              return; //stop the call
         }catch (ArithmeticException e) {
-             request.setAttribute("result", "Can not divide by ZERO");
+             request.setAttribute("result", "Can modulus by ZERO");
              // load attribute to browser
              getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request, response);
              return; //stop the call
